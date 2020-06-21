@@ -40,3 +40,5 @@ sysinfo.txt
 Unity_v*.x.ulf
 
 /*-output.log
+.env
+/workingdir
