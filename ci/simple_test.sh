@@ -7,11 +7,11 @@ echo "Testing for $TEST_PLATFORM"
 PACKAGE_MANIFEST_PATH="Packages/manifest.json"
 
 ${UNITY_EXECUTABLE:-xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' /opt/Unity/Editor/Unity} \
-  -projectPath /project \
   -runTests \
   -testPlatform $TEST_PLATFORM \
   -testResults /project/$TEST_PLATFORM-results.xml \
-  -logFile /dev/stdout \
+  -logFile /project/Editor.log \
+  -stackTraceLogType Full \
   -batchmode
 
 UNITY_EXIT_CODE=$?

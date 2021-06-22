@@ -9,6 +9,7 @@ public class PlayModeTests {
     public void PlayModeTestsSimplePasses() {
         // Use the Assert class to test conditions.
         Assert.True(true);
+        Debug.Log("Simple log message")
     }
 
     // A UnityTest behaves like a coroutine in PlayMode
